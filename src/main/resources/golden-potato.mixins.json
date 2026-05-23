@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.craftedmichi.goldenpotato.mixin",
+	"package": "net.CraftedMichi.goldenpotato.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"
