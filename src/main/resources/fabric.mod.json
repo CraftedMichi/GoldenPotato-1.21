@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "golden-potato",
+	"version": "${version}",
+	"name": "Golden Potato",
+	"description": "POTATOES!!!",
+	"authors": [
+		"CraftedMichi"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/golden-potato/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.CraftedMichi.goldenpotato.GoldenPotato"
+		],
+		"fabric-datagen": [
+			"net.CraftedMichi.goldenpotato.GoldenPotatoDataGenerator"
+		],
+		"client": [
+			"net.CraftedMichi.goldenpotato.GoldenPotatoClient"
+		]
+	},
+	"mixins": [
+		"golden-potato.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
