@@ -1,5 +1,7 @@
 package net.CraftedMichi.goldenpotato;
 
+import net.CraftedMichi.goldenpotato.item.ModItemGroups;
+import net.CraftedMichi.goldenpotato.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,7 +13,8 @@ public class GoldenPotato implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-		LOGGER.info("I think its enabled");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		LOGGER.info("[Golden Potatoes] I think its enabled");
 	}
 }
